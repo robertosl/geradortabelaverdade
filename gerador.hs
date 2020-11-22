@@ -1,10 +1,14 @@
-main = do
-    line <- getLine
-    if null line
-        then return ()
-        else do
-            putStrLn $ reverseWords line
-            main
+import Data.List
 
-reverseWords :: String -> String
-reverseWords = unwords . map reverse . words
+entrada expressao  = let
+  operadores = ["&", "||", "~", "=>", "<=>"]
+  tokens = words expressao
+  variaveis = (nub tokens) \\ operadores
+  tabelaVerdade = mapM (const [True,False]) variaveis
+  tabela = zip variaveis <$> tabelaVerdade 
+  in print $ tabela
+
+main :: IO()
+main = do 
+  m <- getLine
+  entrada m
