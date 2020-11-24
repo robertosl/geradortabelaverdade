@@ -1,5 +1,8 @@
 import Data.List
 
+type Tokens = [String]
+type LinhaTabela = [(String, Bool)]
+
 -- pilha
 push :: String -> [String] -> [String]
 push x pilha = pilha ++ [x]
@@ -23,8 +26,12 @@ inverte_lista :: [String] -> [String]
 inverte_lista [] = []
 inverte_lista (x:xs) = inverte_lista xs ++ [x]
 
-calcula :: [String] -> [(String, Bool)] -> [Bool]
-calcula [] [] = []
+opera :: String -> [String] -> Bool
+
+calcula_linha :: Tokens -> LinhaTabela -> Bool
+cacula_linha = map (\x -> if (even x) then (x `div` 2) else x) [1,2,3,4]
+
+calcula :: Tokens -> [LinhaTabela] -> [Bool]
 
 
 entrada expressao  = let
