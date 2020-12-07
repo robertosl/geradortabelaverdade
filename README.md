@@ -16,12 +16,13 @@ A criações dos códios no final do trabalho ficou da seguinte maneira:
 
 ## Roteiro completo de compilação/execução
 Link Youtube:
+
 Link GitHub: https://github.com/robertosl/geradortabelaverdade
 
 1. Verifique se você possui haskell instalado na sua máquina. Você pode usar os códigos abaixo para verificar: GHC's repl:
 ```bash
-stack --version
-The Glorious Glasgow Haskell Compilation System, version 8.8.1
+ghci --version
+The Glorious Glasgow Haskell Compilation System, version 8.8.4
 ```
 **obs:** Caso não tenha, faça o download. Recomendamos uma das versões abaixo:
 - https://www.haskell.org/downloads/#stack
