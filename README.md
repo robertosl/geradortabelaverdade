@@ -15,7 +15,10 @@ A criações dos códios no final do trabalho ficou da seguinte maneira:
 - **Roberto:** Criação do vídeo do roteiro descrito abaixo
 
 ## Roteiro completo de compilação/execução
-0. Verifique se você possui haskell instalado na sua máquina. Você pode usar os códigos abaixo para verificar: GHC's repl:
+Link Youtube:
+Link GitHub: https://github.com/robertosl/geradortabelaverdade
+
+1. Verifique se você possui haskell instalado na sua máquina. Você pode usar os códigos abaixo para verificar: GHC's repl:
 ```bash
 stack --version
 The Glorious Glasgow Haskell Compilation System, version 8.8.1
