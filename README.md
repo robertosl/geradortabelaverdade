@@ -16,7 +16,7 @@ As criações dos códigos no final do trabalho ficou da seguinte maneira:
 - **Roberto:** Criação do vídeo do roteiro descrito abaixo
 
 ## Roteiro completo de compilação/execução
-0. Verifique se você possui haskell instalado na sua máquina. Você pode usar os códigos abaixo para verificar: GHC's repl:
+1. Verifique se você possui haskell instalado na sua máquina. Você pode usar os códigos abaixo para verificar: GHC's repl:
 ```bash
 stack --version
 The Glorious Glasgow Haskell Compilation System, version 8.8.1
@@ -56,7 +56,10 @@ E ao envés do "Prelude>" agora aparecerá "*Main>"
 main
 ```
 **OBS: é necessário escrever o "main" sempre para escrever uma fórmula**
-Agora basta que você insira a fórmula desejada. Abaixo vamos mostrar alguns exemplos e observações sobre o seu input.
+
+Agora basta que você insira a fórmula desejada. 
+
+Abaixo vamos mostrar alguns exemplos e observações sobre o seu input.
 
 7. Caso deseje sair do ghci basta digitar 
 ```bash
@@ -77,16 +80,22 @@ Antes de mostrarmos os exemplos de entrada e saída gostaria de salientar alguns
 1. Use a notação pré-fixada
 2. É necessário colcar espaço após cada operador e variável
 
-Exemplo válido: ~ -> a b
-Exemplo não válido: ~->ab
+- Exemplo de entrada válida: ~ -> a b
+- Exemplo de entrada não válida: ~->ab
 
 #### Exemplos
 -> a b
+
 "a | b | -> a b"
+
 "V | V | V"
+
 "V | F | F"
+
 "F | V | V"
+
 "F | F | V"
+
 "Formula satisfativel"
 
 <-> -> & a b c -> a -> b c
