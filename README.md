@@ -7,20 +7,21 @@
 
 ## Atuações:
 O trabalho foi feito em conjunto em reuniões semanais por vídeo conferencia.
-A criações dos códios no final do trabalho ficou da seguinte maneira:
-- Rodrigo: elaborou e criou as funções calculaLinha e interpretaExpressao.
-- Rodrigo e Roberto: percebemos que porderiamos reaproveitar o raciocino feito na função calculaLinha para extrair as sub-expressões da expressão principal, com isso criamos a gera geraSubStrings 
-- Eriky: ficou responsável por fazer a exibição da tabela verdade junto com a função (denominacaoFuncao) que informa se a formula é uma Tautologia, Satisfatória e Insatisfatória.
-- Rodrigo, Roberto e Eriky: Ficaram responsáveis por debugar o código e fazer testes.
-- Roberto: Criação do vídeo do roteiro descrito abaixo
+
+As criações dos códigos no final do trabalho ficou da seguinte maneira:
+- **Rodrigo:** elaborou e criou as funções calculaLinha e interpretaExpressao.
+- **Rodrigo e Roberto:** percebemos que porderiamos reaproveitar o raciocino feito na função calculaLinha para extrair as sub-expressões da expressão principal, com isso criamos a gera geraSubStrings 
+- **Eriky:** ficou responsável por fazer a exibição da tabela verdade junto com a função (denominacaoFuncao) que informa se a formula é uma Tautologia, Satisfatória e Insatisfatória.
+- **Rodrigo, Roberto e Eriky:** Ficaram responsáveis por debugar o código e fazer testes.
+- **Roberto:** Criação do vídeo do roteiro descrito abaixo
 
 ## Roteiro completo de compilação/execução
-1. Verifique se você possui haskell instalado na sua máquina. Você pode usar os códigos abaixo para verificar:
-- GHC's repl: 
-> stack --version
+0. Verifique se você possui haskell instalado na sua máquina. Você pode usar os códigos abaixo para verificar: GHC's repl:
+```bash
+stack --version
 The Glorious Glasgow Haskell Compilation System, version 8.8.1
-
-1.1. Caso não tenha, faça o download. Recomendamos uma das versões abaixo:
+```
+**obs:** Caso não tenha, faça o download. Recomendamos uma das versões abaixo:
 - https://www.haskell.org/downloads/#stack
 - https://www.haskell.org/downloads/#platform 
 
@@ -29,26 +30,38 @@ The Glorious Glasgow Haskell Compilation System, version 8.8.1
 3. Abra a pasta do projeto pelo terminal
 
 4. Digite no terminal 
-> ghci
+```bash
+ghci
+```
 Provavelmente agora o ghci vai estar rodando e bem provavel que abaixo apareça:
-> Prelude>
+```bash
+Prelude>
+```
 Isso quer dizer que o Prelude está rodando 
 
 5. Após, na frente do "Prelude>" digite: 
-> :l geradordetabelaver
+```bash
+:l geradorTabelaVerdade.hs
+```
 Isso vai compilar o código do gerador. 
 Provavelmente você receberá a seguinte mensagem:
+```bash
 [1 of 1] Compiling Main             ( geradorTabelaVerdade.hs, interpreted )
 Ok, one module loaded.
+```
 E ao envés do "Prelude>" agora aparecerá "*Main>"
 
 6. Agora basta você digitar
-> main
-Agora basta que você insira a fórmula desejada. Abaixo vamos mostrar alguns exemplos e observações sovre o formato que seu input deve ter 
-OBS: é necessário escrever o mais sempre antes de colocar um fórmula
+```bash
+main
+```
+**OBS: é necessário escrever o "main" sempre para escrever uma fórmula**
+Agora basta que você insira a fórmula desejada. Abaixo vamos mostrar alguns exemplos e observações sobre o seu input.
 
 7. Caso deseje sair do ghci basta digitar 
-> :q
+```bash
+:q
+```
 
 ### Exemplos de entrada e Saída 
 Antes de mostrarmos os exemplos de entrada e saída gostaria de salientar alguns cuidados que você deve ter na hora de colocar sua entrada:
@@ -61,8 +74,8 @@ Antes de mostrarmos os exemplos de entrada e saída gostaria de salientar alguns
 - "<->": se, somente se
 
 #### Cuidados
-1. Use a notação pré-fixada na sua fórmula
-2. É necessário colcar espaço após cada operados e variável
+1. Use a notação pré-fixada
+2. É necessário colcar espaço após cada operador e variável
 
 Exemplo válido: ~ -> a b
 Exemplo não válido: ~->ab
@@ -93,3 +106,4 @@ Exemplo não válido: ~->ab
 "V | F | F"
 "F | V | F"
 "Formula insatisfativel"
+
