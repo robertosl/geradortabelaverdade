@@ -6,13 +6,12 @@
 - Eriky Nunes
 
 ## Atuações:
-O trabalho foi feito em conjunto em reuniões semanais por vídeo conferencia.
-A criações dos códios no final do trabalho ficou da seguinte maneira:
+O trabalho foi feito em reuniões semanais por vídeo conferencia.
+No final do trabalho, a criação dos códigos ficaram da seguinte maneira:
 - **Rodrigo:** elaborou e criou as funções calculaLinha e interpretaExpressao.
 - **Rodrigo e Roberto:** percebemos que porderiamos reaproveitar o raciocino feito na função calculaLinha para extrair as sub-expressões da expressão principal, com isso criamos a gera geraSubStrings 
 - **Eriky:** ficou responsável por fazer a exibição da tabela verdade junto com a função (denominacaoFuncao) que informa se a formula é uma Tautologia, Satisfatória e Insatisfatória.
 - **Rodrigo, Roberto e Eriky:** Ficaram responsáveis por debugar o código e fazer testes.
-- **Roberto:** Criação do vídeo do roteiro descrito abaixo
 
 ## Roteiro completo de compilação/execução
 Link Youtube:
