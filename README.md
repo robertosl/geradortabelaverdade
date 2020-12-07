@@ -14,7 +14,7 @@ No final do trabalho, a criação dos códigos ficaram da seguinte maneira:
 - **Rodrigo, Roberto e Eriky:** Ficaram responsáveis por debugar o código e fazer testes.
 
 ## Roteiro completo de compilação/execução
-Link Youtube:
+Link Youtube: https://youtu.be/pQQEJRZuwKo
 
 Link GitHub: https://github.com/robertosl/geradortabelaverdade
 
